@@ -1,6 +1,7 @@
 package subrota.shuvro.retrofitlivedatamvvm.View.Adapters;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -10,8 +11,10 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.zip.Inflater;
 
 import subrota.shuvro.retrofitlivedatamvvm.Model.UserDataClass.UserResponseDataSet;
+import subrota.shuvro.retrofitlivedatamvvm.R;
 
 public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
     private Context context;
@@ -25,7 +28,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view = LayoutInflater.from(context).inflate(R.layout.user_card_row, parent,false);
+        return new  MainAdapter.ViewHolder(view);
     }
 
     @Override

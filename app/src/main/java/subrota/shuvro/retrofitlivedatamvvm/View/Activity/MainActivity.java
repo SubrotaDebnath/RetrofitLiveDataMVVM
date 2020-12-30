@@ -1,4 +1,4 @@
-package subrota.shuvro.retrofitlivedatamvvm.View;
+package subrota.shuvro.retrofitlivedatamvvm.View.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 

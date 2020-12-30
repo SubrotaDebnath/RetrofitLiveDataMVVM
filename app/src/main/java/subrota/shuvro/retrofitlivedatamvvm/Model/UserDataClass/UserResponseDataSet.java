@@ -1,4 +1,4 @@
 package subrota.shuvro.retrofitlivedatamvvm.Model.UserDataClass;
 
-public class UserResponceDataSet {
+public class UserResponseDataSet {
 }

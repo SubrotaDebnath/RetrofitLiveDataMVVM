@@ -1,6 +1,11 @@
 package subrota.shuvro.retrofitlivedatamvvm.View.Adapters;
 
 import android.content.Context;
+import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,5 +21,9 @@ public class MainAdapter {
         this.dataSets = dataSets;
     }
 
-    public Class ViewHolder
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+        }
+    }
 }

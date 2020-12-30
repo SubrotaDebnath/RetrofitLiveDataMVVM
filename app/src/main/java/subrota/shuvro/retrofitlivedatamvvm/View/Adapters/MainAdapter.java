@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -43,8 +45,14 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
+        ImageView userImage;
+        TextView userName, userEmail, userCompany;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            userImage = itemView.findViewById(R.id.userImage);
+            userName = itemView.findViewById(R.id.userName);
+            userEmail = itemView.findViewById(R.id.userEmail);
+            userCompany = itemView.findViewById(R.id.userCompany);
         }
     }
 }
